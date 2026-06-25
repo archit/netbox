@@ -1,0 +1,23 @@
+# Skyramp Workspace Configuration
+workspace:
+  repoName: archit/netbox
+  repoUrl: https://github.com/archit/netbox
+metadata:
+  schemaVersion: v1
+  executorVersion: v1.3.29
+  createdAt: "2026-06-25T20:55:59.225Z"
+  updatedAt: "2026-06-25T20:55:59.232Z"
+services:
+  - serviceName: netbox-backend
+    language: python
+    framework: pytest
+    testDirectory: tests/skyramp
+    api:
+      schemaPath: http://localhost:8092/api/schema/
+      authType: token
+      authHeader: Authorization
+      baseUrl: http://localhost:8092
+    runtimeDetails:
+      serverStartCommand: docker compose -f deployment-testbot/docker-compose.yml up -d netbox
+      runtime: docker
+      dockerNetwork: deployment-testbot_default
