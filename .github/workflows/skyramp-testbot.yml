@@ -46,4 +46,4 @@ jobs:
           skyrampMcpVersion: 0.2.150-rc.ui.mntnc
           githubToken: ${{ steps.skyramp-testbot-app-token.outputs.token }}
           allowedAuthors: |
--            archit
+            archit
