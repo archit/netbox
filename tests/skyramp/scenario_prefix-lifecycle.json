@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"prefix\": \"192.0.2.0/24\", \"status\": \"active\"}",
+    "ResponseBody": "{\"id\": 1, \"prefix\": \"192.0.2.0/24\", \"status\": {\"value\": \"active\", \"label\": \"Active\"}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/ipam/prefixes/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.445Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"id\": 1, \"prefix\": \"192.0.2.0/24\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/ipam/prefixes/1/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.445Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/ipam/prefixes/1/",
+    "QueryParams": {},
+    "StatusCode": 204,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.445Z",
+    "Scheme": "http"
+  }
+]

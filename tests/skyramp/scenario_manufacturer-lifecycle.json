@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"TestbotMfr-20260625\", \"slug\": \"testbot-mfr-20260625\"}",
+    "ResponseBody": "{\"id\": 1, \"name\": \"TestbotMfr-20260625\", \"slug\": \"testbot-mfr-20260625\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/dcim/manufacturers/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.095Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"id\": 1, \"name\": \"TestbotMfr-20260625\", \"slug\": \"testbot-mfr-20260625\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/dcim/manufacturers/1/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.095Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/dcim/manufacturers/1/",
+    "QueryParams": {},
+    "StatusCode": 204,
+    "Port": 8092,
+    "Timestamp": "2026-06-25T22:31:44.095Z",
+    "Scheme": "http"
+  }
+]
