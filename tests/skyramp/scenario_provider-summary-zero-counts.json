@@ -1,0 +1,54 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Provider-ZeroTest\", \"slug\": \"provider-zerotest\"}",
+    "ResponseBody": "{\"id\": 1, \"name\": \"Provider-ZeroTest\", \"slug\": \"provider-zerotest\", \"url\": \"http://localhost:8092/api/circuits/providers/1/\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/providers/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-06-28T23:43:07.979Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"circuit_count\": 0, \"account_count\": 0, \"network_count\": 0, \"total_related\": 0}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/circuits/providers/1/summary/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-06-28T23:43:07.979Z",
+    "Scheme": "http"
+  }
+]
