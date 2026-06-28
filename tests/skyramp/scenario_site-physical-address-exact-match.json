@@ -1,0 +1,84 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Skyramp Test Site Exact\", \"slug\": \"skyramp-test-site-exact\", \"physical_address\": \"100 Exact Match Lane Seattle WA 98101\"}",
+    "ResponseBody": "{\"id\": 2, \"name\": \"Skyramp Test Site Exact\", \"slug\": \"skyramp-test-site-exact\", \"physical_address\": \"100 Exact Match Lane Seattle WA 98101\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-06-28T23:47:15.580Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"count\": 0, \"results\": []}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {
+      "physical_address": [
+        "100 Exact Match"
+      ]
+    },
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-06-28T23:47:15.580Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/dcim/sites/2/",
+    "QueryParams": {},
+    "StatusCode": 204,
+    "Port": 8092,
+    "Timestamp": "2026-06-28T23:47:15.580Z",
+    "Scheme": "http"
+  }
+]
