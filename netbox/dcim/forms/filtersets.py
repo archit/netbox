@@ -200,7 +200,7 @@ class SiteFilterForm(TenancyFilterForm, ContactModelFilterForm, PrimaryModelFilt
     model = Site
     fieldsets = (
         FieldSet('q', 'filter_id', 'tag'),
-        FieldSet('status', 'region_id', 'group_id', 'asn_id', name=_('Attributes')),
+        FieldSet('status', 'region_id', 'group_id', 'asn_id', 'physical_address', name=_('Attributes')),
         FieldSet('tenant_group_id', 'tenant_id', name=_('Tenant')),
         FieldSet('owner_group_id', 'owner_id', name=_('Ownership')),
         FieldSet('contact', 'contact_role', 'contact_group', name=_('Contacts')),
@@ -209,6 +209,10 @@ class SiteFilterForm(TenancyFilterForm, ContactModelFilterForm, PrimaryModelFilt
     status = forms.MultipleChoiceField(
         label=_('Status'),
         choices=SiteStatusChoices,
+        required=False
+    )
+    physical_address = forms.CharField(
+        label=_('Physical address'),
         required=False
     )
     region_id = DynamicModelMultipleChoiceField(
