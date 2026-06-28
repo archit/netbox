@@ -1,3 +1,7 @@
+from django.shortcuts import get_object_or_404
+from drf_spectacular.utils import extend_schema
+from rest_framework.decorators import action
+from rest_framework.response import Response
 from rest_framework.routers import APIRootView
 
 from circuits import filtersets
@@ -24,6 +28,25 @@ class ProviderViewSet(NetBoxModelViewSet):
     queryset = Provider.objects.all()
     serializer_class = serializers.ProviderSerializer
     filterset_class = filtersets.ProviderFilterSet
+
+    @extend_schema(responses={200: serializers.ProviderSummarySerializer})
+    @action(detail=True, methods=['get'], url_path='summary')
+    def summary(self, request, pk):
+        """
+        Return a summary of the counts of objects (circuits, accounts, and networks) associated with this provider.
+        """
+        provider = get_object_or_404(self.queryset, pk=pk)
+        circuit_count = provider.circuits.count()
+        account_count = provider.accounts.count()
+        network_count = provider.networks.count()
+        data = {
+            'circuit_count': circuit_count,
+            'account_count': account_count,
+            'network_count': network_count,
+            'total_related': circuit_count + account_count + network_count,
+        }
+        serializer = serializers.ProviderSummarySerializer(data)
+        return Response(serializer.data)
 
 
 #

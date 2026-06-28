@@ -12,6 +12,7 @@ __all__ = (
     'ProviderAccountSerializer',
     'ProviderNetworkSerializer',
     'ProviderSerializer',
+    'ProviderSummarySerializer',
 )
 
 
@@ -40,6 +41,16 @@ class ProviderSerializer(PrimaryModelSerializer):
             'asns', 'tags', 'custom_fields', 'created', 'last_updated', 'circuit_count',
         ]
         brief_fields = ('id', 'url', 'display', 'name', 'slug', 'description', 'circuit_count')
+
+
+class ProviderSummarySerializer(serializers.Serializer):
+    """
+    A read-only summary of the counts of objects related to a Provider.
+    """
+    circuit_count = serializers.IntegerField(read_only=True)
+    account_count = serializers.IntegerField(read_only=True)
+    network_count = serializers.IntegerField(read_only=True)
+    total_related = serializers.IntegerField(read_only=True)
 
 
 class ProviderAccountSerializer(PrimaryModelSerializer):
