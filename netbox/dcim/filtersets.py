@@ -214,7 +214,7 @@ class SiteFilterSet(PrimaryModelFilterSet, TenancyFilterSet, ContactModelFilterS
 
     class Meta:
         model = Site
-        fields = ('id', 'name', 'slug', 'facility', 'latitude', 'longitude', 'description')
+        fields = ('id', 'name', 'slug', 'facility', 'latitude', 'longitude', 'physical_address', 'description')
 
     def search(self, queryset, name, value):
         if not value.strip():
