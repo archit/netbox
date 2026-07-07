@@ -163,6 +163,11 @@ class Circuit(ContactsMixin, ImageAttachmentsMixin, DistanceMixin, PrimaryModel)
         if self.provider_account and self.provider != self.provider_account.provider:
             raise ValidationError({'provider_account': "The assigned account must belong to the assigned provider."})
 
+        if self.install_date and self.termination_date and self.termination_date < self.install_date:
+            raise ValidationError({
+                'termination_date': _("The termination date cannot precede the installation date.")
+            })
+
 
 class CircuitGroup(OrganizationalModel):
     """
