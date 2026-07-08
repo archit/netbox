@@ -35,10 +35,10 @@ jobs:
           fetch-depth: 0
           token: ${{ steps.skyramp-testbot-app-token.outputs.token }}
 
-      # SKYR-3879/SKYR-3883 re-validation: testbot = skyramp/testbot@main (v0.10.7 mirror,
-      # 89f8cd79), mcp = 0.2.10-rc.1 (mcp main as of 2026-07-03, includes SKYR-3906).
-      # Previously: skyramp/testbot@v0.10.6 + 0.2.150-rc.ui.mntnc.
-      - uses: skyramp/testbot@main
+      # SKYR-3879/SKYR-3883 re-validation round 2: testbot v0.10.8 (= letsramp main
+      # 337cda4) + mcp v0.3.0-rc.1 (b15720da, includes SKYR-3855/3857 endpoint
+      # classification, SKYR-3906, SKYR-3864). Beta baseline: v0.10.6 + 0.2.150-rc.ui.mntnc.
+      - uses: skyramp/testbot@v0.10.8
         with:
           skyrampLicenseFile: ${{ secrets.SKYRAMP_LICENSE_FILE }}
           anthropicApiKey: ${{ secrets.SKYRAMP_TESTBOT_API_KEY }}
@@ -46,7 +46,7 @@ jobs:
           targetReadyCheckCommand: 'curl -f http://localhost:8092/api/status/'
           targetReadyCheckTimeout: 900
           authTokenCommand: './deployment-testbot/get-token.sh'
-          skyrampMcpVersion: 0.2.10-rc.1
+          skyrampMcpVersion: 0.3.0-rc.1
           githubToken: ${{ steps.skyramp-testbot-app-token.outputs.token }}
           allowedAuthors: |
             archit
