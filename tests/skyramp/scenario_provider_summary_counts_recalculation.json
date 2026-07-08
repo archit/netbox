@@ -1,0 +1,236 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Provider Summary Test 9001\", \"slug\": \"provider-summary-test-9001\"}",
+    "ResponseBody": "{\"id\": 101, \"name\": \"Provider Summary Test 9001\", \"slug\": \"provider-summary-test-9001\", \"circuit_count\": 0}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/providers/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.989Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"circuit_count\": 0, \"account_count\": 0, \"network_count\": 0, \"total_related\": 0}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/circuits/providers/101/summary/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.989Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Circuit Type Summary Test 9001\", \"slug\": \"circuit-type-summary-test-9001\"}",
+    "ResponseBody": "{\"id\": 201, \"name\": \"Circuit Type Summary Test 9001\", \"slug\": \"circuit-type-summary-test-9001\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuit-types/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"cid\": \"CKT-SUMMARY-9001\", \"provider\": 101, \"type\": 201}",
+    "ResponseBody": "{\"id\": 301, \"cid\": \"CKT-SUMMARY-9001\", \"provider\": {\"id\": 101}, \"type\": {\"id\": 201}}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuits/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"provider\": 101, \"account\": \"ACCT-SUMMARY-9001\"}",
+    "ResponseBody": "{\"id\": 401, \"provider\": {\"id\": 101}, \"account\": \"ACCT-SUMMARY-9001\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/provider-accounts/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"provider\": 101, \"name\": \"Provider Network Summary Test 9001\"}",
+    "ResponseBody": "{\"id\": 501, \"provider\": {\"id\": 101}, \"name\": \"Provider Network Summary Test 9001\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/provider-networks/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"circuit_count\": 1, \"account_count\": 1, \"network_count\": 1, \"total_related\": 3}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/circuits/providers/101/summary/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "DELETE",
+    "Path": "/api/circuits/circuits/301/",
+    "QueryParams": {},
+    "StatusCode": 204,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"circuit_count\": 0, \"account_count\": 1, \"network_count\": 1, \"total_related\": 2}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/circuits/providers/101/summary/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:17:08.990Z",
+    "Scheme": "http"
+  }
+]
