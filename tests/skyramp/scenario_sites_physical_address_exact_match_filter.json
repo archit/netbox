@@ -1,0 +1,84 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Physical Addr Site A 1783478474\", \"slug\": \"physical-addr-site-a-1783478474\", \"status\": \"active\", \"physical_address\": \"100 Main Street, Springfield\"}",
+    "ResponseBody": "{\"id\": 90001, \"name\": \"Physical Addr Site A 1783478474\", \"slug\": \"physical-addr-site-a-1783478474\", \"physical_address\": \"100 Main Street, Springfield\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:00.070Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Physical Addr Site B 1783478474\", \"slug\": \"physical-addr-site-b-1783478474\", \"status\": \"active\", \"physical_address\": \"100 Main Street, Springfield Heights\"}",
+    "ResponseBody": "{\"id\": 90002, \"name\": \"Physical Addr Site B 1783478474\", \"slug\": \"physical-addr-site-b-1783478474\", \"physical_address\": \"100 Main Street, Springfield Heights\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:00.070Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"count\": 1, \"results\": [{\"id\": 90001, \"name\": \"Physical Addr Site A 1783478474\", \"physical_address\": \"100 Main Street, Springfield\"}]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {
+      "physical_address": [
+        "100 Main Street, Springfield"
+      ]
+    },
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:00.070Z",
+    "Scheme": "http"
+  }
+]
