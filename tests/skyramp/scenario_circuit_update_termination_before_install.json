@@ -1,0 +1,106 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Skyramp Test Provider C\", \"slug\": \"skyramp-test-provider-c\"}",
+    "ResponseBody": "{\"id\": 9021, \"name\": \"Skyramp Test Provider C\", \"slug\": \"skyramp-test-provider-c\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/providers/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:15.106Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Skyramp Test Circuit Type C\", \"slug\": \"skyramp-test-circuit-type-c\"}",
+    "ResponseBody": "{\"id\": 9022, \"name\": \"Skyramp Test Circuit Type C\", \"slug\": \"skyramp-test-circuit-type-c\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuit-types/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:15.106Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"cid\": \"SKY-CIRC-C-001\", \"provider\": 9021, \"type\": 9022, \"install_date\": \"2024-01-01\", \"termination_date\": \"2025-06-01\"}",
+    "ResponseBody": "{\"id\": 9023, \"cid\": \"SKY-CIRC-C-001\", \"install_date\": \"2024-01-01\", \"termination_date\": \"2025-06-01\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuits/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:15.106Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"termination_date\": \"2023-01-01\"}",
+    "ResponseBody": "{\"termination_date\": [\"The termination date cannot precede the installation date.\"]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PATCH",
+    "Path": "/api/circuits/circuits/9023/",
+    "QueryParams": {},
+    "StatusCode": 400,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:15.106Z",
+    "Scheme": "http"
+  }
+]
