@@ -1,0 +1,80 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Skyramp Test Provider A\", \"slug\": \"skyramp-test-provider-a\"}",
+    "ResponseBody": "{\"id\": 9001, \"name\": \"Skyramp Test Provider A\", \"slug\": \"skyramp-test-provider-a\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/providers/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:04.730Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Skyramp Test Circuit Type A\", \"slug\": \"skyramp-test-circuit-type-a\"}",
+    "ResponseBody": "{\"id\": 9002, \"name\": \"Skyramp Test Circuit Type A\", \"slug\": \"skyramp-test-circuit-type-a\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuit-types/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:04.730Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"cid\": \"SKY-CIRC-A-001\", \"provider\": 9001, \"type\": 9002, \"install_date\": \"2025-06-01\", \"termination_date\": \"2024-01-01\"}",
+    "ResponseBody": "{\"termination_date\": [\"The termination date cannot precede the installation date.\"]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/circuits/circuits/",
+    "QueryParams": {},
+    "StatusCode": 400,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:14:04.731Z",
+    "Scheme": "http"
+  }
+]
