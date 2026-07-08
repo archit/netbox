@@ -1,0 +1,114 @@
+[
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"name\": \"Physical Addr Site C 1783478474\", \"slug\": \"physical-addr-site-c-1783478474\", \"status\": \"active\", \"physical_address\": \"200 Old Address Road\"}",
+    "ResponseBody": "{\"id\": 90003, \"name\": \"Physical Addr Site C 1783478474\", \"slug\": \"physical-addr-site-c-1783478474\", \"physical_address\": \"200 Old Address Road\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "POST",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {},
+    "StatusCode": 201,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:09.981Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "{\"physical_address\": \"300 New Address Boulevard\"}",
+    "ResponseBody": "{\"id\": 90003, \"name\": \"Physical Addr Site C 1783478474\", \"physical_address\": \"300 New Address Boulevard\"}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "PATCH",
+    "Path": "/api/dcim/sites/90003/",
+    "QueryParams": {},
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:09.981Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"count\": 1, \"results\": [{\"id\": 90003, \"physical_address\": \"300 New Address Boulevard\"}]}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {
+      "physical_address": [
+        "300 New Address Boulevard"
+      ]
+    },
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:09.981Z",
+    "Scheme": "http"
+  },
+  {
+    "Source": "192.168.65.1:39998",
+    "Destination": "localhost",
+    "RequestBody": "",
+    "ResponseBody": "{\"count\": 0, \"results\": []}",
+    "RequestHeaders": {
+      "Content-Type": [
+        "application/json"
+      ],
+      "Authorization": [
+        "Token SKYRAMP_PLACEHOLDER_TOKEN"
+      ]
+    },
+    "ResponseHeaders": {
+      "Content-Type": [
+        "application/json"
+      ]
+    },
+    "Method": "GET",
+    "Path": "/api/dcim/sites/",
+    "QueryParams": {
+      "physical_address": [
+        "200 Old Address Road"
+      ]
+    },
+    "StatusCode": 200,
+    "Port": 8092,
+    "Timestamp": "2026-07-08T02:42:09.981Z",
+    "Scheme": "http"
+  }
+]
